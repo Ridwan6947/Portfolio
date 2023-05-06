@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mynerve&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+    width: 15vw;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100vw;
+    background-color: #4D4D4D;
+}
+.sidebar li{
+    margin-left: 10px;
+}
+
+.sidebar nav{
+    margin-top: 50px;
+    padding: 5px;
+    
+}
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 25px;
+    margin-top:45px;
+    margin-left: 15px;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-family: 'Shantell Sans', cursive;
+}
+.main{
+    background-color:#FFBF9B;
+    width: 85vw;
+}
+.container{
+    display: flex;
+}
+.info{
+    background-color: #B46060;
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+}
+.pic img{
+    height: 50vh;
+    width: 50vh;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px;
+}
+.Hello{
+    font-size: 75px;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(87, 79, 65); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 5px; /* Adjust as needed */
+    animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: center;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(92, 63, 10); }
+  }
+.name{
+    font-size: 50px;
+    font-family: 'Tilt Neon', cursive;
+    margin-top: 20px;
+    text-align: center;
+}
+.more{
+    font-family: 'Cardo', serif;
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight:lighter;
+
+}
+.buttons {
+    margin-top: 25px;
+    padding-left: 50vh;
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(184, 126, 126);
+    background-color:beige ;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.buttons button:hover{
+    background-color: rgba(224, 121, 121, 0.959);
+    color: white;
+}
+.sidebar nav li button{
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 25px;
+    border-color: rgb(151, 149, 149);
+    padding: 5px 10px;
+    background-color: rgb(151, 149, 149);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(87, 79, 65); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: center;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(92, 63, 10); }
+  }
+.sidebar nav li button:hover{
+    background-color: rgb(100, 61, 61);
+    color: white;
+}
+.contact h1{
+    padding: 20px;
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Dancing Script', cursive;
+}
+.contact form{
+    margin-top: 10vh;
+    justify-content: center;
+    padding: 34px 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+    background-color: #B46060;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-left: 40vh;
+}
+form input{
+    border: 0;
+    width: 50vh;
+    margin: 20px 0;
+    padding: 25px;
+    outline: none;
+    background-color: white;
+}
+.btn{
+    border-radius: 50px;
+    padding: 15px;
+    transition: 0.5s;
+    width: 100px;
+}
+.btn:hover{
+    background-color: wheat;
+}
+.form-control{
+    margin-left: 40px;
+    box-sizing: 41px;
+    height: 30px;
+    margin-bottom: 6px;
+    width: 42vh;
+}
+.sidebar li a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-family: 'Shantell Sans', cursive;
+}
+.socials{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color:#4D4D4D;
+    width: 30vh;
+}
+.socials h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Shantell Sans', cursive;
+    font-size: 40px;
+}
+.socials li{
+    margin-left: 35px;
+    margin-top: 20px;
+    padding: 10px;
+    list-style-type: none;
+}
+.socials li button{
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 25px;
+    border-color: rgb(151, 149, 149);
+    padding: 5px 10px;
+    background-color: rgb(151, 149, 149);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(87, 79, 65); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: center;  
+}
+.socials li button:hover{
+    background-color: rgb(100, 61, 61);
+    color: white;
+}
+.socials li button a{
+    text-decoration: none;
+    color: black;
+}
+.typewrite{
+    text-align: center;
+    font-size: 75px;
+    text-decoration: none;
+    color: rgb(136, 136, 79);
+    font-style: italic;
+}
+.certificate{
+    background-color: #B46060;
+    height: 80vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 110px;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;    
+}
+.certificate h1{
+    font-family: 'Shantell Sans', cursive;
+    font-size: 57px;
+}
+.column1{
+    float: left;
+    width: 45vh;
+    padding: 10px;
+    margin-left: 65px;
+}
+.column5{
+    float: left;
+    width: 45vh;
+    padding: 10px;
+    margin-left:30px;
+    margin-top: -10px;
+}
+.column2{
+    float: left;
+    width: 45vh;
+    padding: 10px;
+    margin-left: 30px;
+}
+.column3{
+    float: left;
+    width: 47vh;
+    padding: 18px;
+    margin-left: 30px;
+}
+.column4{
+    float: left;
+    width: 45vh;
+    padding: 18px;
+    margin-left: 65px;
+    
+}
+.certificate::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.middle{
+    background-color: red;
+}
+

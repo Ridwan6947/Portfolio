@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mynerve&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Mynerve&family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidebar{
+    width: 15vw;
+    
+    height: 100vw;
+    background-color: rgb(151, 149, 149);
+}
+
+.sidebar nav{
+    margin-top: 50px;
+    padding: 25px;
+    
+}
+.sidebar nav li{
+    list-style-type: none;
+    font-size: 25px;
+    margin-top:45px;
+}
+.sidebar nav li a {
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    font-family: 'Shantell Sans', cursive;
+}
+.main{
+    background-color: antiquewhite;
+    width: 85vw;
+}
+.container{
+    display: flex;
+}
+.info{
+    background-color: bisque;
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+}
+.pic img{
+    height: 50vh;
+    width: 50vh;
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.Hello{
+    
+    font-size: 75px;
+    font-family: 'Playfair Display', serif;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(87, 79, 65); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 5px; /* Adjust as needed */
+    animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: center;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(92, 63, 10); }
+  }
+.name{
+    font-size: 50px;
+    font-family: 'Tilt Neon', cursive;
+    margin-top: 20px;
+    text-align: center;
+}
+.more{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    margin-top: 20px;
+
+}
+.buttons {
+    margin-top: 25px;
+    padding-left: 50vh;
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 15px;
+    border-color: rgb(184, 126, 126);
+    background-color:beige ;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.buttons button:hover{
+    background-color: rgba(224, 121, 121, 0.959);
+    color: white;
+}
+.sidebar nav li button{
+    border-radius: 25px;
+    transition: 0.5s;
+    font-size: 25px;
+    border-color: rgb(151, 149, 149);
+    padding: 5px 10px;
+    background-color: rgb(151, 149, 149);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(87, 79, 65); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 1px; /* Adjust as needed */
+    animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+    text-align: center;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(92, 63, 10); }
+  }
+.sidebar nav li button:hover{
+    background-color: rgb(100, 61, 61);
+    color: white;
+}
+.sidebar nav  li button home{
+    border-radius:0px ;
+}
+
